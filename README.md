@@ -45,14 +45,6 @@ sudo vim /etc/ssh/sshd_config
 Изменяем следующие параметры:
 ```
 #Port 22
-PermitRootLogin yes
-PubkeyAuthentication yes
-#PasswordAuthentication yes
-X11Forwarding yes
-```
-Они должны выглядеть так:
-```
-#Port 22
 PermitRootLogin no
 PubkeyAuthentication yes
 PasswordAuthentication no
