@@ -40,6 +40,11 @@ sudo vim ~/.zshrc
 ```
 export PATH:$PATH:/home/artem/.python/bin
 ```
+Обновление pip и setuptools:
+```
+pip3.10 install --upgrade pip : \
+pip3.10 install --upgrade setuptools
+```
 
 
 
