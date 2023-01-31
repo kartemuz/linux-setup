@@ -34,6 +34,7 @@ sudo reboot
 
 ## Настройка ssh
 ### Размещение открытого ключа на сервере
+На ПК клиента запускаем следующую команду, чтобы перенести публичный ключ на удалённый сервер:
 ```
 ssh-copy-id artem@192.168.31.121
 ```
@@ -50,7 +51,13 @@ PubkeyAuthentication yes
 PasswordAuthentication no
 X11Forwarding yes
 ```
-Перезапускаем ssh сервер:
+Перезапускаем ssh-сервер:
 ```
 sudo service sshd restart
+```
+## Ошибка
+В случае следующей ошибки необходимо изменить права доступа к файлам ssh-ключей
+```
+sign_and_send_pubkey: signing failed for RSA "/home/artem/.ssh/id_rsa" from agent: agent refused operation
+artem@192.168.31.121: Permission denied (publickey).
 ```
