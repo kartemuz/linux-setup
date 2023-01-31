@@ -56,8 +56,13 @@ X11Forwarding yes
 sudo service sshd restart
 ```
 ## Ошибка
-В случае следующей ошибки необходимо изменить права доступа к файлам ssh-ключей
+В случае следующей ошибки:
 ```
 sign_and_send_pubkey: signing failed for RSA "/home/artem/.ssh/id_rsa" from agent: agent refused operation
 artem@192.168.31.121: Permission denied (publickey).
+```
+необходимо изменить права доступа к файлам ssh-ключей:
+```
+sudo chmod 600 ~/.ssh/id_rsa ; \
+sudo chmod 644 ~/.ssh/id_rsa.pub
 ```
