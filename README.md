@@ -32,9 +32,9 @@ mkdir ~/.python ; \
 make -j8 ; \
 sudo make altinstall
 ```
-Изменение файла `~~/.zshrc`:
+Изменение файла `~/.zshrc`:
 ```
-sudo vim .~/.zshrc
+sudo vim ~/.zshrc
 ```
 Добавить следующую строчку:
 ```
