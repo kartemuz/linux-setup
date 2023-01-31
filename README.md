@@ -97,7 +97,7 @@ X11Forwarding yes
 sudo service sshd restart
 ```
 ## Исправление ошибок
-### Ошибка с ssh-ключами `Permission denied (publickey)`
+### ssh-ключи
 Текст ошибки:
 ```
 sign_and_send_pubkey: signing failed for RSA "/home/artem/.ssh/id_rsa" from agent: agent refused operation
@@ -108,7 +108,7 @@ artem@192.168.31.121: Permission denied (publickey).
 sudo chmod 600 ~/.ssh/id_rsa ; \
 sudo chmod 644 ~/.ssh/id_rsa.pub
 ```
-### Ошибка с zsh
+### zsh
 В случае, если zsh перестала видеть программы (постоянно `command not found`) ввести в терминале следующее:
 ```
 PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
