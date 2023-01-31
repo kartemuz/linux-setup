@@ -13,6 +13,16 @@ sudo apt install -y tree redis-server nginx zlib1g-dev libbz2-dev libreadline-de
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+### Установка Python 3.10
+```
+sudo wget https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tgz ; \
+tar xvf Python-3.10.* ; \
+cd Python-3.10.9 ; \
+mkdir ~/.python ; \
+./configure --enable-optimizations --prefix=/home/artem/.python ; \
+make -j8 ; \
+sudo make altinstall
+```
 
 
 
