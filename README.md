@@ -5,6 +5,9 @@ sudo apt update ; \
 sudo apt full-upgrade -y
 ```
 
+
+
+
 ## Локализация сервера
 ```
 sudo apt install language-pack-ru language-pack-ru-base
@@ -12,7 +15,7 @@ sudo apt install language-pack-ru language-pack-ru-base
 ### Изменение файла локализации
 Открываем файл локализации:
 ```
-sudo nano /etc/default/locale
+sudo vim /etc/default/locale
 ```
 Удаляем всё и вставляем:
 ```
@@ -21,7 +24,41 @@ LANGUAGE=ru_US.RUF-8
 LANG=ru_RU.UTF-8
 LC_ALL=ru_RU.UTF-8
 ```
-Выходим нажатием `Ctrl-X`, подтверждая сохранение. Перезапускаем сервер:
+Перезапускаем сервер:
 ```
 sudo reboot
+```
+
+
+
+
+## Настройка ssh
+### Размещение открытого ключа на сервере
+```
+ssh-copy-id artem@192.168.31.121
+```
+### Редактирвание файла настройки ssh
+Открываем файл настроек:
+```
+sudo vim /etc/ssh/sshd_config
+```
+Изменяем следующие параметры:
+```
+#Port 22
+PermitRootLogin yes
+PubkeyAuthentication yes
+#PasswordAuthentication yes
+X11Forwarding yes
+```
+Они должны выглядеть так:
+```
+#Port 22
+PermitRootLogin no
+PubkeyAuthentication yes
+PasswordAuthentication no
+X11Forwarding yes
+```
+Перезапускаем ssh сервер:
+```
+sudo service sshd restart
 ```
