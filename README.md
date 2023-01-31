@@ -1,2 +1,2 @@
 # orangepi-server
-Configuring the orangepi server
+Configuring the orangepi server.
