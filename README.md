@@ -42,7 +42,7 @@ export PATH=/home/artem/.python/bin:$PATH
 ```
 Обновление pip и setuptools:
 ```
-pip3.10 install --upgrade pip : \
+pip3.10 install --upgrade pip ; \
 pip3.10 install --upgrade setuptools
 ```
 
