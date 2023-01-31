@@ -22,7 +22,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 chsh -s $(which zsh)
 ```
-### Установка Python 3.10
+### Установка Python 3.9
 ```
 sudo wget https://www.python.org/ftp/python/3.9.16/Python-3.9.16.tgz ; \
 tar xvf Python-3.9.* ; \
