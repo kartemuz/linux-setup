@@ -7,13 +7,18 @@ sudo apt install -y vim tmux htop git curl wget unzip zip gcc build-essential ma
 ```
 ### Установка зависимостей и zsh
 ```
-sudo apt install -y zsh tree redis-server nginx zlib1g-dev libbz2-dev libreadline-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev liblzma-dev python3-dev python3-lxml libxslt-dev libffi-dev libssl-dev gnumeric libsqlite3-dev libpq-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev libcurl4-openssl-dev supervisor
+sudo apt install -y tree redis-server nginx zlib1g-dev libbz2-dev libreadline-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev liblzma-dev python3-dev python3-lxml libxslt-dev libffi-dev libssl-dev gnumeric libsqlite3-dev libpq-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev libcurl4-openssl-dev supervisor
 ```
-### Установка oh-my-zsh
+### zsh
+Установка zsh:
+```
+sudo apt install zsh
+```
+Установка oh-my-zsh:
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-### Смена bash на zsh
+Смена bash на zsh
 ```
 chsh -s $(which zsh)
 ```
