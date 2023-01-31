@@ -55,7 +55,7 @@ X11Forwarding yes
 ```
 sudo service sshd restart
 ```
-## Ошибка
+## Исправление ошибки "Permission denied (publickey)"
 В случае следующей ошибки:
 ```
 sign_and_send_pubkey: signing failed for RSA "/home/artem/.ssh/id_rsa" from agent: agent refused operation
