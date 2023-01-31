@@ -9,4 +9,13 @@ sudo apt full-upgrade -y
 ```
 sudo apt install language-pack-ru language-pack-ru-base
 ```
-Изменяем файл `sudo nano /etc/default/locale`
+### Изменение файла локализации
+Открываем файл локализации: `sudo nano /etc/default/locale`
+Удаляем всё и вставляем:
+```
+LC_MESSAGES=ru_RU.UTF-8
+LANGUAGE=ru_US.RUF-8
+LANG=ru_RU.UTF-8
+LC_ALL=ru_RU.UTF-8
+```
+Выходим нажатием `Ctrl-x` и сохраняем.
