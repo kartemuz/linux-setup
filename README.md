@@ -13,6 +13,10 @@ sudo apt install -y zsh tree redis-server nginx zlib1g-dev libbz2-dev libreadlin
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+### Смена bash на zsh
+```
+chsh -s $(which zsh)
+```
 ### Установка Python 3.10
 ```
 sudo wget https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tgz ; \
