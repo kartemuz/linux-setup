@@ -24,9 +24,9 @@ chsh -s $(which zsh)
 ```
 ### Установка Python 3.10
 ```
-sudo wget https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tgz ; \
-tar xvf Python-3.10.* ; \
-cd Python-3.10.9 ; \
+sudo wget https://www.python.org/ftp/python/3.9.16/Python-3.9.16.tgz ; \
+tar xvf Python-3.9.* ; \
+cd Python-3.9.16 ; \
 mkdir ~/.python ; \
 ./configure --enable-optimizations --prefix=/home/artem/.python ; \
 make -j8 ; \
@@ -42,8 +42,8 @@ export PATH:$PATH:/home/artem/.python/bin
 ```
 Обновление pip и setuptools:
 ```
-pip3.10 install --upgrade pip : \
-pip3.10 install --upgrade setuptools
+pip3.9 install --upgrade pip : \
+pip3.9 install --upgrade setuptools
 ```
 
 
