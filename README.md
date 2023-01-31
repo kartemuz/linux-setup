@@ -32,6 +32,14 @@ mkdir ~/.python ; \
 make -j8 ; \
 sudo make altinstall
 ```
+Изменение файла `~/.zshrc`:
+```
+sudo vim .~/.zshrc
+```
+Добавить следующую строчку:
+```
+export PATH:$PATH:/home/artem/.python/bin
+```
 
 
 
