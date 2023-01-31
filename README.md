@@ -18,4 +18,4 @@ LANGUAGE=ru_US.RUF-8
 LANG=ru_RU.UTF-8
 LC_ALL=ru_RU.UTF-8
 ```
-Выходим нажатием `Ctrl-x` и сохраняем.
+Выходим нажатием `Ctrl-x`, подтверждая сохранение.
