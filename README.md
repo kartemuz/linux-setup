@@ -3,7 +3,7 @@
 ```
 sudo apt update ; \
 sudo apt full-upgrade -y ; \
-sudo apt install -y build-essential
+sudo apt install -y vim tmux htop git curl wget unzip zip gcc build-essential make
 ```
 ### Установка зависимостей
 ```
