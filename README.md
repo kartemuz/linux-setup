@@ -22,6 +22,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 chsh -s $(which zsh)
 ```
+При возникновении ошибки `"command not found"` выполнить следующее:
+```
+PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+export PATH
+```
+
 ### Установка Python 3.10
 ```
 sudo wget https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tgz ; \
