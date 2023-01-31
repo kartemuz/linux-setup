@@ -22,12 +22,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 chsh -s $(which zsh)
 ```
-При возникновении ошибки `"command not found"` выполнить следующее:
-```
-PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
-export PATH
-```
-
 ### Установка Python 3.10
 ```
 sudo wget https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tgz ; \
@@ -102,8 +96,9 @@ X11Forwarding yes
 ```
 sudo service sshd restart
 ```
-## Исправление ошибки "Permission denied (publickey)"
-В случае следующей ошибки:
+## Исправление ошибок
+### Ошибка с ssh-ключами `Permission denied (publickey)`
+Текст ошибки:
 ```
 sign_and_send_pubkey: signing failed for RSA "/home/artem/.ssh/id_rsa" from agent: agent refused operation
 artem@192.168.31.121: Permission denied (publickey).
@@ -112,4 +107,10 @@ artem@192.168.31.121: Permission denied (publickey).
 ```
 sudo chmod 600 ~/.ssh/id_rsa ; \
 sudo chmod 644 ~/.ssh/id_rsa.pub
+```
+### Ошибка с zsh
+В случае, если zsh перестала видеть программы (постоянно `command not found`) ввести в терминале следующее:
+```
+PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+export PATH
 ```
