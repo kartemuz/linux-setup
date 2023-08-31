@@ -24,9 +24,9 @@ chsh -s $(which zsh)
 ```
 ### Установка Python 3.10
 ```
-sudo wget https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tgz ; \
+sudo wget https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz ; \
 tar xvf Python-3.10.* ; \
-cd Python-3.10.9 ; \
+cd Python-3.10.13 ; \
 mkdir ~/.python ; \
 ./configure --enable-optimizations --prefix=/home/artem/.python ; \
 make -j8 ; \
