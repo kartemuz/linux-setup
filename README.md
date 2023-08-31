@@ -121,7 +121,7 @@ sudo service sshd restart
 Текст ошибки:
 ```
 sign_and_send_pubkey: signing failed for RSA "/home/artem/.ssh/id_rsa" from agent: agent refused operation
-artem@192.168.31.121: Permission denied (publickey).
+artem@192.168.0.103: Permission denied (publickey).
 ```
 Необходимо изменить права доступа к файлам ssh-ключей:
 ```
