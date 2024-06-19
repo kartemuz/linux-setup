@@ -12,7 +12,7 @@ sudo apt install -y tree redis-server nginx zlib1g-dev libbz2-dev libreadline-de
 ### zsh
 Установка zsh:
 ```
-sudo apt install zsh
+sudo apt install -y zsh
 ```
 Установка oh-my-zsh:
 ```
@@ -28,7 +28,7 @@ sudo wget https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz ; \
 tar xvf Python-3.10.* ; \
 cd Python-3.10.13 ; \
 mkdir ~/.python ; \
-./configure --enable-optimizations --prefix=/home/artem/.python ; \
+./configure --enable-optimizations --prefix=$HOME/.python ; \
 make -j8 ; \
 sudo make altinstall
 ```
@@ -38,7 +38,7 @@ sudo vim ~/.zshrc
 ```
 Добавить следующую строчку:
 ```
-export PATH=/home/artem/.python/bin:$PATH
+export PATH=$HOME/.python/bin:$PATH
 ```
 Обновление pip и setuptools:
 ```
@@ -106,7 +106,6 @@ sudo vim /etc/ssh/sshd_config
 ```
 Изменяем следующие параметры:
 ```
-#Port 22
 PermitRootLogin no
 PubkeyAuthentication yes
 PasswordAuthentication no
