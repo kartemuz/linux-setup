@@ -22,6 +22,22 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 chsh -s $(which zsh)
 ```
+Установка powerlevel10k:
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+Добавить в файл `~/.zshrc` тему `powerlevel10k`:
+```
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+Для запуска настройки темы:
+```
+p10k configure
+```
+Добавление `alias ls` в файл `~/.zshrc`:
+```
+alias ls="eza --tree --level=1 --icons=always --no-time --no-user --no-permissions"
+```
 ### Установка Python 3.10
 ```
 sudo wget https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz ; \
