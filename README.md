@@ -2,8 +2,8 @@
 ## Обновление системы и установка необходимых пакетов
 ```
 sudo apt update ; \
-sudo apt full-upgrade -y ; \
-sudo apt install -y vim tmux htop git curl wget unzip zip gcc build-essential make
+sudo apt upgrade -y ; \
+sudo apt install -y vim tmux htop git curl wget unzip zip gcc build-essential make net-tools
 ```
 ### Установка зависимостей
 ```
