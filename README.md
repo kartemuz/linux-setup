@@ -19,6 +19,11 @@ sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.lis
 sudo apt update
 sudo apt install -y eza
 ```
+### Установка Nerd шрифта
+```
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
+```
 ### zsh
 Установка zsh:
 ```
@@ -74,7 +79,8 @@ export PATH=$HOME/.python/bin:$PATH
 ```
 pip3.10 install --upgrade pip ; \
 pip3.10 install --upgrade setuptools
-```
+``
+7\5`
 
 
 
