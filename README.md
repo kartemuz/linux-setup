@@ -79,8 +79,7 @@ export PATH=$HOME/.python/bin:$PATH
 ```
 pip3.10 install --upgrade pip ; \
 pip3.10 install --upgrade setuptools
-``
-7\5`
+```
 
 
 
