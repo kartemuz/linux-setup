@@ -1,3 +1,4 @@
+# Темы: https://github.com/alacritty/alacritty-theme
 import = [
     "~/.config/alacritty/themes/themes/gruvbox_material_medium_dark.toml"
 ]
