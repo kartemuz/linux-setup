@@ -11,6 +11,8 @@ sudo apt install -y tree redis-server nginx zlib1g-dev libbz2-dev libreadline-de
 ```
 
 
+
+
 ## Оформление
 ### Установка eza
 ```
@@ -60,6 +62,17 @@ alias ls="eza --tree --level=1 --icons=always --no-time --no-user --no-permissio
 ```
 exec zsh
 ```
+### Alacritty
+Установка тем
+```
+# We use Alacritty's default Linux config directory as our storage location here.
+mkdir -p ~/.config/alacritty/themes
+git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+```
+
+
+
+
 ## Установка Python 3.10
 ```
 sudo wget https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz ; \
@@ -85,6 +98,8 @@ pip3.10 install --upgrade setuptools
 ```
 
 
+
+
 ## Мониторинг температуры
 Установка:
 ```
@@ -103,6 +118,8 @@ sudo systemctl enable lm-sensors
 ```
 sensors
 ```
+
+
 
 
 ## Локализация сервера
@@ -125,6 +142,8 @@ LC_ALL=ru_RU.UTF-8
 ```
 sudo reboot
 ```
+
+
 
 
 ## Настройка ssh
