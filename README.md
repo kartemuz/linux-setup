@@ -1,4 +1,4 @@
-# orangepi-server
+# my-linux
 ## Обновление системы и установка необходимых пакетов
 ```
 sudo apt update ; \
@@ -9,6 +9,9 @@ sudo apt install -y vim tmux htop git curl wget unzip zip gcc build-essential ma
 ```
 sudo apt install -y tree redis-server nginx zlib1g-dev libbz2-dev libreadline-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev liblzma-dev python3-dev python3-lxml libxslt-dev libffi-dev libssl-dev gnumeric libsqlite3-dev libpq-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev libcurl4-openssl-dev supervisor
 ```
+
+
+## Оформление
 ### Установка eza
 ```
 sudo apt install -y gpg
@@ -57,7 +60,7 @@ alias ls="eza --tree --level=1 --icons=always --no-time --no-user --no-permissio
 ```
 exec zsh
 ```
-### Установка Python 3.10
+## Установка Python 3.10
 ```
 sudo wget https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz ; \
 tar xvf Python-3.10.* ; \
@@ -82,8 +85,7 @@ pip3.10 install --upgrade setuptools
 ```
 
 
-
-### Мониторинг температуры
+## Мониторинг температуры
 Установка:
 ```
 sudo apt install lm-sensors
@@ -101,7 +103,6 @@ sudo systemctl enable lm-sensors
 ```
 sensors
 ```
-
 
 
 ## Локализация сервера
@@ -124,8 +125,6 @@ LC_ALL=ru_RU.UTF-8
 ```
 sudo reboot
 ```
-
-
 
 
 ## Настройка ssh
