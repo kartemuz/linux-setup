@@ -50,7 +50,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 Смена bash на zsh
 ```
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
 ```
 Установка powerlevel10k:
 ```
