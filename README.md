@@ -1,4 +1,14 @@
 # Linux
+# Создание пользователя
+```
+useradd artem -d /home/artem -m -G users -s /bin/bash ; \
+passwd artem ; \
+sudo usermod -aG sudo artem
+```
+
+
+
+
 ## Обновление системы и установка необходимых пакетов
 ```
 sudo apt update ; \
