@@ -187,8 +187,6 @@ artem@192.168.0.103: Permission denied (publickey).
 ```
 Необходимо изменить права доступа к файлам ssh-ключей:
 ```
-sudo chmod 600 ~/.ssh/id_rsa ; \
-sudo chmod 644 ~/.ssh/id_rsa.pub ; \
 sudo chmod 600 ~/.ssh/id_ed25519 ; \
 sudo chmod 644 ~/.ssh/id_ed25519.pub
 ```
