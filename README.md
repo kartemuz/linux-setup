@@ -178,6 +178,16 @@ X11Forwarding yes
 ```
 sudo service sshd restart
 ```
+
+
+
+
+## Установка Docker
+[Инструкция с официального сайта]([https://skillbox.ru/media/](https://docs.docker.com/engine/install/ubuntu/))
+
+
+
+
 ## Исправление ошибок
 ### ssh-ключи
 Текст ошибки:
