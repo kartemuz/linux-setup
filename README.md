@@ -103,8 +103,8 @@ export PATH=$HOME/.python/bin:$PATH
 ```
 Обновление pip и setuptools:
 ```
-pip3.11 install --upgrade pip ; \
-pip3.11 install --upgrade setuptools
+pip3.10 install --upgrade pip ; \
+pip3.10 install --upgrade setuptools
 ```
 
 
