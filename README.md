@@ -83,11 +83,11 @@ git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/theme
 
 
 
-## Установка Python 3.11
+## Установка Python 3.10
 ```
-sudo wget https://www.python.org/ftp/python/3.11.10/Python-3.11.10.tgz ; \
-tar xvf Python-3.11.* ; \
-cd Python-3.11.10 ; \
+sudo wget https://www.python.org/ftp/python/3.10.11/Python-3.10.11.tgz ; \
+tar xvf Python-3.10.* ; \
+cd Python-3.10.11 ; \
 mkdir ~/.python ; \
 ./configure --enable-optimizations --prefix=$HOME/.python ; \
 make -j8 ; \
