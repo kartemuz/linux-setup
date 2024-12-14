@@ -92,8 +92,9 @@ mkdir ~/.python ; \
 ./configure --enable-optimizations --prefix=$HOME/.python ; \
 make -j8 ; \
 sudo make altinstall ; \
-rm -rf ~/Python-3.10.11 ; \
-rm -rf ~/Python-3.10.11.tgz
+cd ~ ; \
+sudo rm -rf ~/Python-3.10.11 ; \
+sudo rm -rf ~/Python-3.10.11.tgz
 ```
 Изменение файла `~/.zshrc`:
 ```
