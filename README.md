@@ -93,7 +93,7 @@ mkdir ~/.python ; \
 make -j8 ; \
 sudo make altinstall ; \
 rm -rf ~/Python-3.10.11 ; \
-rm  -rf ~/Python-3.10.11.tgz
+rm -rf ~/Python-3.10.11.tgz
 ```
 Изменение файла `~/.zshrc`:
 ```
