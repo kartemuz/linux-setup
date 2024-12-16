@@ -225,6 +225,10 @@ artem@192.168.0.103: Permission denied (publickey).
 sudo chmod 600 ~/.ssh/id_ed25519 ; \
 sudo chmod 644 ~/.ssh/id_ed25519.pub
 ```
+```
+sudo chmod 600 ~/.ssh/id_rsa ; \
+sudo chmod 644 ~/.ssh/id_rsa.pub
+```
 ### zsh
 В случае, если zsh перестала видеть программы (постоянно `command not found`) ввести в терминале следующее:
 ```
