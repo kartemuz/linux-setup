@@ -113,6 +113,28 @@ pip3.11 install --upgrade setuptools
 
 
 
+## Установка Python 3.10
+```
+sudo wget https://www.python.org/ftp/python/3.10.11/Python-3.10.11.tgz ; \
+tar xvf Python-3.10.* ; \
+cd Python-3.10.11 ; \
+mkdir ~/.python ; \
+./configure --enable-optimizations --prefix=$HOME/.python ; \
+make -j8 ; \
+sudo make altinstall ; \
+cd ~ ; \
+sudo rm -rf ~/Python-3.10.11 ; \
+sudo rm -rf ~/Python-3.10.11.tgz
+```
+Обновление pip и setuptools:
+```
+pip3.10 install --upgrade pip ; \
+pip3.10 install --upgrade setuptools
+```
+
+
+
+
 ## Мониторинг температуры
 Установка:
 ```
