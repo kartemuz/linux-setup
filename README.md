@@ -37,7 +37,10 @@ sudo apt install -y eza
 ### Установка Nerd шрифта
 ```
 mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
+```
+В созданную папку необходимо переместить шрифты из `fonts`, затем обновить шрифты:
+```
+fc-cache -f -v
 ```
 ### zsh
 Установка zsh:
