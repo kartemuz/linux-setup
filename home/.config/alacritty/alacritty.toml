@@ -1,5 +1,5 @@
 # Темы: https://github.com/alacritty/alacritty-theme
-import = [
+general.import = [
     "~/.config/alacritty/themes/themes/gruvbox_material_medium_dark.toml"
 ]
 
@@ -15,5 +15,5 @@ opacity = 1.00
 blur = false
 
 [font]
-normal.family = "JetBrains Mono"
+normal.family = "DroidSansMNerdFont"
 size = 13.0
