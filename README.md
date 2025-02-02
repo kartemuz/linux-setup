@@ -218,6 +218,10 @@ sudo service sshd restart
 
 ## Установка Poetry
 [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-poetry-to-manage-python-dependencies-on-ubuntu-22-04)
+### Командна для установки
+```
+curl -sSL https://install.python-poetry.org | python3 -
+```
 
 
 
