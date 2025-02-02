@@ -84,6 +84,8 @@ git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/theme
 
 
 
+
+
 ## Установка Python 3.11
 ```
 sudo wget https://www.python.org/ftp/python/3.11.9/Python-3.11.9.tgz ; \
@@ -210,6 +212,12 @@ sudo service sshd restart
 
 ## Установка Docker
 [Инструкция с официального сайта](https://docs.docker.com/engine/install/ubuntu/)
+
+## Установка Pyenv
+[Репозиторий GitHub](https://docs.docker.com/engine/install/ubuntu/)
+
+## Установка Poetry
+[DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-poetry-to-manage-python-dependencies-on-ubuntu-22-04)
 
 
 
