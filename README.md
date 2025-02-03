@@ -214,7 +214,7 @@ sudo service sshd restart
 [Инструкция с официального сайта](https://docs.docker.com/engine/install/ubuntu/)
 
 ## Установка Pyenv
-[Репозиторий GitHub](https://docs.docker.com/engine/install/ubuntu/)
+[Репозиторий GitHub](https://github.com/pyenv/pyenv?tab=readme-ov-file#unixmacos)
 
 ## Установка Poetry
 [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-poetry-to-manage-python-dependencies-on-ubuntu-22-04)
