@@ -17,7 +17,7 @@ sudo apt install -y vim tmux htop git curl wget unzip zip gcc build-essential ma
 ```
 ### Установка зависимостей
 ```
-sudo apt install -y tree redis-server nginx zlib1g-dev libbz2-dev libreadline-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev liblzma-dev python3-dev python3-lxml libxslt-dev libffi-dev libssl-dev gnumeric libsqlite3-dev libpq-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev libcurl4-openssl-dev supervisor
+sudo apt install -y tree zlib1g-dev libbz2-dev libreadline-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev liblzma-dev python3-dev python3-lxml libxslt-dev libffi-dev libssl-dev gnumeric libsqlite3-dev libpq-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev libcurl4-openssl-dev supervisor
 ```
 
 
@@ -215,6 +215,10 @@ sudo service sshd restart
 
 ## Установка Pyenv
 [Репозиторий GitHub](https://github.com/pyenv/pyenv?tab=readme-ov-file#unixmacos)
+### Командна для установки
+```
+curl -fsSL https://pyenv.run | bash
+```
 
 ## Установка Poetry
 [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-poetry-to-manage-python-dependencies-on-ubuntu-22-04)
