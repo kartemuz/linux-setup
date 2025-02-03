@@ -1,5 +1,27 @@
 # Linux
-# Создание пользователя
+
+## Первоначальная установка в одном скрипте:
+```
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -y vim tmux htop git curl wget unzip zip gcc build-essential make net-tools
+
+sudo apt install -y tree zlib1g-dev libbz2-dev libreadline-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev liblzma-dev python3-dev python3-lxml libxslt-dev libffi-dev libssl-dev gnumeric libsqlite3-dev libpq-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev libcurl4-openssl-dev supervisor ; \
+
+sudo apt install -y gpg
+sudo mkdir -p /etc/apt/keyrings
+wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
+echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
+sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
+sudo apt update
+sudo apt install -y eza
+
+curl -sSL https://install.python-poetry.org | python3 -
+
+curl -fsSL https://pyenv.run | bash
+```
+
+## Создание пользователя
 ```
 useradd artem -d /home/artem -m -G users -s /bin/bash ; \
 passwd artem ; \
