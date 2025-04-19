@@ -255,6 +255,25 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+## Настройка Git
+```
+git config --global user.name kartemuz
+git config --global user.email kartemuz@gmail.com
+```
+Настройка ветки по умолчанию:
+```
+git config --global init.defaultBranch main
+```
+Корректная обработка окончаний строк для Linux:
+```
+git config --global core.autocrlf input
+git config --global core.safecrlf warn
+```
+Корректная обработка окончаний строк для Windows:
+```
+git config --global core.autocrlf true
+git config --global core.safecrlf warn
+```
 
 ## Установка Pyenv
 [Репозиторий GitHub](https://github.com/pyenv/pyenv?tab=readme-ov-file#unixmacos)
