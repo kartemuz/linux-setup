@@ -314,3 +314,22 @@ sudo chmod 644 ~/.ssh/id_rsa.pub
 PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 export PATH
 ```
+### При включенном VPM в Windows не резолвятся домены в WSL:
+Нужно добавить в `/etc/wsl.conf` строки:
+```
+[network]
+generateResolvConf = false
+```
+После этого потребуется изменить `/etc/resolv.conf`:
+```
+sudo chattr -i /etc/resolv.conf
+sudo rm /etc/resolv.conf
+echo "nameserver 172.20.96.1" | sudo tee /etc/resolv.conf
+echo "nameserver 1.1.1.1" | sudo tee -a /etc/resolv.conf
+echo "nameserver 1.0.0.1" | sudo tee -a /etc/resolv.conf
+sudo chattr +i /etc/resolv.conf
+```
+Вместо `172.20.96.1` указать хост Windows, посмотреть можно командой:
+```
+ip route | grep default
+```
