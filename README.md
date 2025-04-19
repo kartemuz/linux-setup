@@ -314,7 +314,7 @@ sudo chmod 644 ~/.ssh/id_rsa.pub
 PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 export PATH
 ```
-### При включенном VPM в Windows не резолвятся домены в WSL:
+### При включенном VPN в Windows не резолвятся домены в WSL:
 Нужно добавить в `/etc/wsl.conf` строки:
 ```
 [network]
